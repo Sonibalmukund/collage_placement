@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\ProfileController as AdminProfileController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\InterviewController;
 use App\Http\Controllers\Job\AppliedJobController;
 use App\Http\Controllers\Job\DashboardController as JobDashboardController;
 use App\Http\Controllers\Job\JobsController;
@@ -76,3 +77,5 @@ Route::get('/company/job/{job}/student/{student}/edit', [AppliedJobController::c
 Route::get('company/profile/{id}',[ProfileController::class,'index'])->name('job.profile');
 Route::post('company/store', [ProfileController::class, 'store'])->name('company.store');
 });
+Route::get('/interview/{job}/{student}', [InterviewController::class, 'show'])
+     ->name('interview.details');

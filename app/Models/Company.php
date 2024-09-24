@@ -10,7 +10,15 @@ class Company extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'website', 'email', 'password', 'logo', 'linkedin_url'];
+    public function getLogoUrl()
+    {
+        if ($this->logo) {
+            return asset('storage/logos/' . $this->logo);
+        }
 
+        // Default logo if no logo is uploaded
+        return asset('images/download (14).jpeg');
+    }
 
     public function jobs()
     {

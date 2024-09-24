@@ -26,8 +26,9 @@ class JobRejectedMail extends Mailable
         return $this->view('emails.job_rejected')
                     ->subject('Job Application Status: Rejected')
                     ->with([
-                        'studentName' => $this->student->name,
+                        'studentName' => $this->student->username,
                         'jobTitle' => $this->job->title,
+                        'companyname'=>$this->job->company->name,
                     ]);
     }
 }

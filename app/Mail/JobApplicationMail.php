@@ -28,6 +28,7 @@ class JobApplicationMail extends Mailable
                         'studentName' => $this->student->username,
                         'jobTitle' => $this->job->title,
                         'resumeName' => $this->resume->resume_name,
+                        'companyname'=>$this->job->name,
                     ]);
     }
 }
