@@ -1,0 +1,137 @@
+/* General styles for body and container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.nav-btn .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.login-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login-menu li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.login-menu a {
+    text-decoration: none;
+    color: #000; /* Adjust this color based on your design */
+}
+
+/*
+/* Section styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about, .services, .contact {
+    background-color: #f4f4f4;
+    margin: 20px 0;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(388px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    padding: 10px; /* Space between grid items */
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.service-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #666;
+}
+
+.service-item p {
+    color: #555;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
