@@ -282,7 +282,9 @@
 
 
 {{ $slot }}
-
+<div class="footer-wrap pd-20 mb-20 card-box">
+    DeskApp - Bootstrap 4 Admin Template By <a href="#" target="_blank">Collage Placement</a>
+</div>
 <script src="{{ asset('js/core.js') }}"></script>
 <script src="{{ asset('js/script.min.js') }}"></script>
 <script src="{{ asset('js/process.js') }}"></script>

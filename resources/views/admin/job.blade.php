@@ -51,7 +51,7 @@
                                         @foreach($jobs as $job)
                                         <tr>
                                             <td class="table-plus">{{ $job->title }}</td>
-                                            <td><img src="asset('storage/'.$appliedJob->job->company->logo) }}" alt="Company Logo"  style="width: 50px; height: 50px;" alt=""></td>
+                                            <td><img src="{{ asset('storage/'.$job->company->logo) }}" alt="Company Logo"  style="width: 50px; height: 50px;" alt=""></td>
                                             <td>{{ $job->company->name }}</td>
                                             <td>{{ $job->vacancy }}</td>
                                             <td>{{ $job->salary }}</td>
@@ -78,9 +78,7 @@
 				</div>
 				<!-- Export Datatable End -->
 			</div>
-			<div class="footer-wrap pd-20 mb-20 card-box">
-				DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
-			</div>
+
 		</div>
 	</div>
 	<!-- js -->

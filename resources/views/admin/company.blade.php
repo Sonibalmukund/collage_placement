@@ -48,7 +48,7 @@
                                         @foreach($company as $companies)
                                         <tr>
                                             <td class="table-plus">{{ $companies->name }}</td>
-                                            <td><img src="asset('storage/'.$appliedJob->job->company->logo) }}" alt="Company Logo"  style="width: 50px; height: 50px;" ></td>
+                                            <td><img src="{{ asset('storage/'.$companies->logo) }}" alt="Company Logo"  style="width: 50px; height: 50px;" ></td>
                                              <td>{{ $companies->email }}</td>
                                             <td><a href="{{ $companies->website }}" target="_blank">{{ $companies->website }}</a></td>
                                         </tr>
@@ -60,9 +60,7 @@
 				</div>
 				<!-- Export Datatable End -->
 			</div>
-			<div class="footer-wrap pd-20 mb-20 card-box">
-				DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
-			</div>
+
 		</div>
 	</div>
 	<!-- js -->

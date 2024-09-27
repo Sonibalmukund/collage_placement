@@ -32,7 +32,7 @@
 				</div>
 				<div class="card-box mb-30">
 					<div class="pd-20">
-						<h4 class="text-blue h4">Data Table with Export Buttons</h4>
+						<h4 class="text-blue h4">Applied Jobs</h4>
 					</div>
 					<div class="pb-20">
 						<table class="table hover multiple-select-row data-table-export nowrap">
@@ -78,9 +78,7 @@
 				</div>
 				<!-- Export Datatable End -->
 			</div>
-			<div class="footer-wrap pd-20 mb-20 card-box">
-				DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
-			</div>
+
 		</div>
 	</div>
 	<!-- js -->
